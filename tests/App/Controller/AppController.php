@@ -1,5 +1,5 @@
 <?php
-namespace Foobar\Test\App\Controller;
+namespace Qobo\Notifications\Test\App\Controller;
 
 use \Cake\Controller\Controller;
 

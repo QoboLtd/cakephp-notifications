@@ -1,5 +1,5 @@
 <?php
-namespace Foobar\Test\Fixture;
+namespace Qobo\Notifications\Test\Fixture;
 
 use Cake\TestSuite\Fixture\TestFixture;
 
