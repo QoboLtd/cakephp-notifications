@@ -1,0 +1,56 @@
+{
+    "name": "qobo/cakephp-notifications",
+    "description": "Notifications plugin for CakePHP",
+    "keywords": ["cakephp", "notifications"],
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "homepage": "https://www.qobo.biz",
+    "authors": [
+        {
+            "name": "Qobo Ltd",
+            "email": "support@qobo.biz",
+            "homepage": "https://www.qobo.biz",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/QoboLtd/cakephp-notifications/issues",
+        "source": "https://github.com/QoboLtd/cakephp-notifications"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require": {
+    },
+    "require-dev": {
+        "qobo/cakephp-composer-dev": "^v1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qobo\\Notifications\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Qobo\\Notifications\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpcs",
+            "phpunit --no-coverage"
+        ],
+        "test-coverage": [
+            "phpcs",
+            "phpunit"
+        ],
+        "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
+    },
+    "scripts-descriptions": {
+        "test": "Runs phpcs and phpunit without coverage",
+        "test-coverage": "Runs phpcs and phpunit with coverage enabled"
+    },
+    "prefer-stable": true
+}
